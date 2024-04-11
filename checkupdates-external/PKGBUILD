@@ -1,6 +1,6 @@
 # Maintainer :
 pkgname=checkupdates-external
-pkgver=r21.e1c7926
+pkgver=r25.bb8b006
 pkgrel=1
 pkgdesc='checkupdates for Google Chrome and JetBrains'
 arch=('x86_64')
