@@ -1,0 +1,8 @@
+[Unit]
+Description=Copy EFISTUB Kernel to EFI System Partition
+[Path]
+PathChanged=/boot/intel-ucode.img
+PathChanged=/boot/initramfs-linux-fallback.img
+[Install]
+WantedBy=multi-user.target
+WantedBy=system-update.target

@@ -1,0 +1,13 @@
+pkgbase = systemd-efistub-update
+	pkgdesc = Systemd unit to copy EFISTUB Kernel to EFI system partition after upgrade.
+	pkgver = 1
+	pkgrel = 1
+	arch = any
+	license = GPL
+	depends = systemd
+	source = efistub-update.path
+	source = efistub-update.service
+	sha256sums = 631065587b6354c82078e7034fd97f0526adb024fcbfc24344bf7d292bda4203
+	sha256sums = 882804493018bedb09407f158cb68cf8e24f12cab88233078cf1dde76004d29e
+
+pkgname = systemd-efistub-update

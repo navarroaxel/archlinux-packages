@@ -1,0 +1,17 @@
+# Maintainer: Axel Navarro <navarroaxel gmail>
+pkgname=systemd-efistub-update
+pkgver=1
+pkgrel=1
+pkgdesc="Systemd unit to copy EFISTUB Kernel to EFI system partition after upgrade."
+arch=("any")
+license=("GPL")
+depends=('systemd')
+source=(efistub-update.path efistub-update.service)
+sha256sums=('631065587b6354c82078e7034fd97f0526adb024fcbfc24344bf7d292bda4203'
+            '882804493018bedb09407f158cb68cf8e24f12cab88233078cf1dde76004d29e')
+
+package() {
+    install -m755 -d "$pkgdir/etc/systemd/system/"
+    install -m644 "$srcdir/efistub-update.path" "$pkgdir/etc/systemd/system/efistub-update.path"
+    install -m644 "$srcdir/efistub-update.service" "$pkgdir/etc/systemd/system/efistub-update.service"
+}
