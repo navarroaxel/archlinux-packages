@@ -1,6 +1,6 @@
 # Maintainer :
 pkgname=checkupdates-external
-pkgver=r33.da87fab
+pkgver=r35.019ba0b
 pkgrel=1
 pkgdesc='checkupdates for Google Chrome and JetBrains'
 arch=('x86_64')
@@ -8,6 +8,7 @@ url="https://github.com/navarroaxel/archlinux-$pkgname"
 license=('MIT')
 depends=('git')
 makedepends=('rust')
+options=('!lto')
 source=("$pkgname"::"git+https://github.com/navarroaxel/archlinux-$pkgname.git")
 sha256sums=('SKIP')
 
